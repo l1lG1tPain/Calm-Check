@@ -1257,6 +1257,195 @@
       transform: scale(0.92);
     }
 
+    /* ========== AKULKA PROJECTS ========== */
+    .akulka-projects {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    .company-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.3px;
+      margin-bottom: 6px;
+    }
+
+    .company-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .product-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 14px;
+      box-shadow: var(--glass-shadow);
+      transition: all var(--transition-normal);
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .product-card:hover {
+      border-color: rgba(79, 138, 158, 0.3);
+      background: rgba(255, 255, 255, 0.85);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(79, 138, 158, 0.12);
+    }
+
+    .product-card.link::after {
+      content: '↗';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      opacity: 0.6;
+    }
+
+    .product-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      object-fit: cover;
+      background: linear-gradient(135deg, rgba(79, 138, 158, 0.1), rgba(79, 138, 158, 0.05));
+    }
+
+    .product-card h3 {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+      letter-spacing: -0.2px;
+    }
+
+    .product-card p {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+
+    .product-version {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      background: rgba(79, 138, 158, 0.1);
+      padding: 3px 8px;
+      border-radius: 20px;
+      margin-top: auto;
+    }
+
+    .about-dev {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--glass-bg);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--glass-shadow);
+      margin-bottom: 10px;
+      transition: all var(--transition-normal);
+    }
+
+    .about-dev:hover {
+      border-color: rgba(79, 138, 158, 0.3);
+      transform: translateX(2px);
+    }
+
+    .about-dev-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, rgba(79, 138, 158, 0.15), rgba(79, 138, 158, 0.05));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-dev-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-dev-name {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.2px;
+    }
+
+    .about-dev-sub {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .about-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 16px;
+      background: linear-gradient(135deg, #0088cc, #0099e6);
+      color: white;
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 12px rgba(0, 136, 204, 0.25);
+      transition: all var(--transition-normal);
+      margin-bottom: 16px;
+    }
+
+    .about-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 136, 204, 0.35);
+    }
+
+    .about-link-icon {
+      font-size: 1.1rem;
+    }
+
+    .about-link-ext {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-left: auto;
+    }
+
+    .footer-text {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 8px 0;
+    }
+
     /* ========== UTILITIES ========== */
     .text-center {
       text-align: center;
@@ -1317,7 +1506,10 @@
     .pin-key,
     .stat-card,
     .setting-row,
-    .history-item {
+    .history-item,
+    .product-card,
+    .about-dev,
+    .about-link {
       -webkit-user-select: none;
       user-select: none;
       -webkit-touch-callout: none;
@@ -1515,7 +1707,7 @@
         </div>
         <div class="toggle" id="toggle-photo"></div>
       </div>
-      <div class="setting-row">
+      <div class="setting-row hidden">
         <div>
           <div class="setting-label">PIN-код</div>
           <div class="setting-desc">Защита приложения</div>
@@ -1532,7 +1724,62 @@
       <div class="mt-2">
         <button class="btn btn-danger-soft w-full" id="btn-reset">🗑 Сбросить всё</button>
       </div>
-      <div class="mt-3" style="text-align:center;color:var(--text-muted);font-size:0.78rem;font-weight:500;">
+
+      <!-- AKULKA PROJECTS -->
+      <div class="akulka-projects">
+        <h2 class="company-title">Akulka Projects</h2>
+        <p class="company-subtitle">
+          Инди-экосистема продуктов, которые делают жизнь проще и приятнее
+        </p>
+
+        <div class="products-grid">
+          <a href="https://l1lg1tpain.github.io/TrackIt/index.html" class="product-card link" target="_blank" rel="noopener noreferrer">
+            <img src="img/trackit-icon.png" class="product-icon" alt="TrackIt">
+            <h3>TrackIt</h3>
+            <p>Счётчик очков для настольных игр</p>
+            <span class="product-version">v3.5</span>
+          </a>
+
+          <a href="https://budgetit.app" class="product-card link" target="_blank" rel="noopener noreferrer">
+            <img src="img/budgetit-icon.png" class="product-icon" alt="BudgetIt">
+            <h3>BudgetIt</h3>
+            <p>Учёт финансов с аналитикой</p>
+            <span class="product-version">v4.0.1</span>
+          </a>
+
+          <a href="https://migry-bice.vercel.app/" target="_blank" class="product-card link" rel="noopener noreferrer">
+            <img src="img/migri-icon.png" class="product-icon" alt="Мигри">
+            <h3>Мигри</h3>
+            <p>Трекер головной боли с аналитикой</p>
+            <span class="product-version">v1.0</span>
+          </a>
+
+          <a href="https://t.me/LUdomania_app_bot" target="_blank" class="product-card link" rel="noopener noreferrer">
+            <img src="img/ludomania-icon.png" class="product-icon" alt="Ludomania">
+            <h3>Ludomania</h3>
+            <p>Мини-игра в Telegram</p>
+            <span class="product-version">beta</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="about-dev">
+        <div class="about-dev-avatar">
+          <img src="img/LG.png" alt="l1lG1tPain">
+        </div>
+        <div class="about-dev-info">
+          <div class="about-dev-name">l1lG1tPain</div>
+          <div class="about-dev-sub">UX, скорость, эстетика</div>
+        </div>
+      </div>
+
+      <a href="https://t.me/cybersnitch" target="_blank" class="about-link">
+        <span class="about-link-icon">✈️</span>
+        <span>Telegram @Cybersnitch</span>
+        <span class="about-link-ext">↗</span>
+      </a>
+
+      <div class="footer-text">
         Calm Check v1.3 · Локальное хранение · Приватность по умолчанию
       </div>
     </div>

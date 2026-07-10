@@ -1,5 +1,5 @@
 // Calm Check v1.2 — Service Worker
-const CACHE_NAME = 'calm-check-v1.3';
+const CACHE_NAME = 'calm-check-v1.3.1';
 const ASSETS = ['/', '/index.html', '/app.js', '/manifest.json', '/img/CalmCheck-192.png', '/img/CalmCheck-512.png', '/img/CalmCheck.png'];
 
 self.addEventListener('install', (event) => {
